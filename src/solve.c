@@ -1,10 +1,10 @@
 
-int solve(CC_System, double *height){
+int solve(AC_System, double *height){
   
   return 0;
 }
 
-int calculate_kernel(CC_System system*, double* kernel){
+int calculate_kernel(AC_System system*, double* kernel){
   double x1, x2, y1, y2, pref;
   int i, j;
 
@@ -26,7 +26,7 @@ double kernel_indefinite(double x, double y){
   return fabs(x) * asinh(y/x) + fabs(y) * asinh(x/y);
 }
 
-int spherical_h_profile(CC_System *system, double* init_height){
+int spherical_h_profile(AC_System *system, double* init_height){
   int i, j;
   double r2, x, y, inverse_radius;
   double c_x, c_y;

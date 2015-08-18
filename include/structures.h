@@ -1,17 +1,19 @@
 #ifndef STRUCTURES_H
 #define STRUCTURES_H
 
-// Everything read from the options file
-typedef struct CC_Options {
+// For anything which doesn't fit in other structs
+typedef struct AC_Options {
 
-} CC_Options;
+} AC_Options;
 
 // Physical properties of the system
-typedef struct CC_System{
+typedef struct AC_System{
   unsigned int nx, ny, n_tot;
   double x_spacing, y_spacing;
   double approach;
-  double radius;
-} CC_System;
+  double* height;
+  double* pressure;  
+  double* kernel;
+} AC_System;
 
 #endif

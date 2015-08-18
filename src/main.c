@@ -8,8 +8,9 @@
 
 int main()
 {
-  CC_Options options;
-  CC_System system;
+  AC_Options options;
+  AC_System system;
+  void* solver_options;
   
   // Variables for using getopt to parse argv
   int opt, long_index, file_flag = 0;
@@ -42,6 +43,11 @@ int main()
         break;
     }
   }
+
+  // read input file
+  // construct structs
+  // solve system
+  // clean up
 
   return 0;
 }
