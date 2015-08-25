@@ -1,3 +1,6 @@
+#include <math.h>
+#include "structures.h"
+#
 
 int solve(AC_System, double *height){
   
